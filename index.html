@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Global City Weather</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/three@0.131.2/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.131.2/examples/js/controls/OrbitControls.js"></script>
+        <script src="main.js" type="module" defer></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="description">
+                <p id="description">
+                    Welcome! This is our global weather visualiser. You can provide city name or coordinates and our
+                    service will get information about the subject and display city on the interactive Earth map,
+                    along with local weather information. Use mouse to navigate
+                    the Earth.
+                </p>
+            </div>
+            <div id="scene"></div>
+            
+            <div id="addName">
+                <div>
+                    <label for="name">Enter city name: </label>
+                    <input
+                    id="cityNameText"
+                    name="name"
+                    type="text"
+                    placeholder="City Name"
+                    />
+                    <button id="addByNameButton" type="button">
+                        Add city on globe
+                    </button>
+                </div>
+            </div>
+            
+            <div id="addCoordinates">
+                <div>
+                    <label for="name">Enter city coordinates: </label>
+                    <input
+                    id="latitude"
+                    name="latitude"
+                    type="text"
+                    placeholder="Latitude"
+                    />
+                    <input
+                    id="longitude"
+                    name="longitude"
+                    type="text"
+                    placeholder="Longitude"
+                    />
+                    <button id="addByCoordinatesButton" type="button">
+                        Add city on globe
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>List of added cities:</p>
+            <table id="list">
+                <tr>
+                  <th>City name</th>
+                  <th>Latitude</th>
+                  <th>Longitude</th>
+                  <th>Temperature</th>
+                  <th>WindSpeed</th>
+                </tr>
+              </table>
+        </div>
+    </body>
+</html>

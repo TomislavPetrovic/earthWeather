@@ -1,0 +1,42 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: lightgray;
+}
+h1 {
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#scene {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
